@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mix and Match: Context Pairing for Scalable Topic-Controlled Educational Summarisation</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="pair-motif">
+      <span class="a"></span>
+      <span class="b"></span>
+    </div>
+    <h1 class="title">Mix and Match: Context Pairing for Scalable Topic-Controlled Educational Summarisation</h1>
+  </div>
+</header>
+
+<main>
+
+  <section id="Problem">
+    <div class="wrap">
+      <p class="eyebrow">Problem</p>
+      <h2 class="section-title">Why Topic-Controlled Summarisation (TCS)?</h2>
+      <p>
+        Academic literature keeps growing at a pace no learner can fully keep up with, 
+        making it impractical to read every paper in full. What learners usually need 
+        isn't the whole document but the specific topic relevant to their question. 
+        Generic summarisation falls short here &mdash; it gives a broad overview rather than 
+        focusing on that topic. Topic-controlled summarisation (TCS) addresses this by 
+        targeting a chosen topic directly, reducing the cognitive load of digging through 
+        irrelevant content.
+      </p>
+    </div>
+  </section>
+
+  <section id="team">
+    <div class="wrap">
+      <p class="eyebrow">Team</p>
+      <h2 class="section-title">Team-member</h2>
+      <div class="team-grid">
+        <div class="team-card kku">
+          <img src="images/Nathikan.jpg" alt="Nathikan Yodthap" class="member-photo">
+          <p class="name">Nathikan Yodthap</p>
+          <p class="role">Researcher</p>
+          <span class="pill kku">KKU</span>
+        </div>
+        <div class="team-card kku">
+          <img src="images/Thanapong.jpg" alt="Thanapong Intharah" class="member-photo">
+          <p class="name">Thanapong Intharah</p>
+          <p class="role">Advisor</p>
+          <span class="pill kku">KKU</span>
+        </div>
+        <div class="team-card ucl"> 
+          <img src="images/Sahan.jpg" alt="Sahan Bulathwela" class="member-photo">
+          <p class="name">Sahan Bulathwela</p>
+          <p class="role">Co-Advisor</p>
+          <span class="pill ucl">UCL</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="abstract">
+    <div class="wrap">
+      <p class="eyebrow">Abstract</p>
+      <h2 class="section-title">Abstract</h2>
+      <div class="abstract-card">
+        <p>
+          Topic-controlled summarisation enables users to generate summaries focused on specific
+          aspects of source documents. This paper investigates a data augmentation strategy for
+          training small language models (sLMs) to perform topic-controlled summarisation. We
+          propose a pairwise data augmentation method that combines contexts from different
+          documents to create contrastive training examples, enabling models to learn the
+          relationship between topics and summaries more effectively. Using the SciTLDR dataset
+          enriched with Wikipedia-derived topics, we systematically evaluate how augmentation scale
+          affects model performance. Results show consistent improvements in win rate and semantic
+          alignment as the augmentation scale increases, while the amount of real training data
+          remains fixed. Consequently, a T5-base model trained with our augmentation approach
+          achieves competitive performance relative to larger models, despite using significantly
+          fewer parameters and substantially fewer real training examples.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="workflow">
+    <div class="wrap">
+      <p class="eyebrow">Method</p>
+      <h2 class="section-title">Method Overview</h2>
+      <div class="swiper workflow-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/Method.png" alt="Overview of the workflow">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/Mixing.png" alt="Step 2 of the workflow">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/Tercile.png" alt="Step 3 of the workflow">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="resources">
+    <div class="wrap">
+      <p class="eyebrow">Resources</p>
+      <div class="resource-grid">
+        <div class="resource-card">
+          <p class="tag">Main content</p>
+          <h3>Code</h3>
+          <p>Implementation details, training scripts, and released checkpoints will be published here.</p>
+          <span class="coming-soon">Coming soon</span>
+        </div>
+        <div class="resource-card">
+          <p class="tag">Publication</p>
+          <h3>AIED 2026 &middot; Springer</h3>
+          <p>Read the full paper in the AIED 2026 proceedings, published by Springer.</p>
+          <a class="ext-link" href="https://link.springer.com/chapter/10.1007/978-3-032-29760-0_20" target="_blank" rel="noopener">Read the paper &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="data">
+    <div class="wrap">
+      <p class="eyebrow">Data availability</p>
+      <h2 class="section-title">Dataset</h2>
+      <div class="data-card">
+        <div class="meta">
+          <p style="font-weight:600; color: var(--navy);">Harvard Dataverse</p>
+          <p>The dataset used in this work is publicly available for download and reuse.</p>
+        </div>
+        <a class="ext-link" href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WWXMUC" target="_blank" rel="noopener">View dataset &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Nathikan Yodthap &middot; Mix and Match: Context Pairing for Scalable Topic-Controlled 
+    Educational Summarisation (TCS) &middot; KKU Vi lab &amp; UCL</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  new Swiper('.workflow-swiper', {
+    loop: true,
+    autoHeight: true,
+    autoplay: { delay: 3000,
+                pauseOnMouseEnter: true,},
+    pagination: { el: '.swiper-pagination', clickable: true },
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+  });
+</script>
+
+
+</body>
+</html>
