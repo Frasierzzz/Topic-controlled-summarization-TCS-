@@ -43,7 +43,7 @@ html {
 }
 
 body {
-  font-size: clamp(16px, 4vw, 22px);
+  font-size: clamp(13px, 4.2vw, 22px);
   width: 100%;
   overflow-x: hidden;
   background: linear-gradient(180deg, #dce6f5 0%, var(--page-bg) 40%, #f8fafd 100%);
@@ -444,11 +444,4 @@ footer {
     align-items: flex-start;
   }
   .eyebrow { font-size: 11px; }
-}
-
-@media (max-width: 600px) {
-  .abstract-card,
-  #Problem p {
-    text-align: left;
-  }
 }
